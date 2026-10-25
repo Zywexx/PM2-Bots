@@ -1,0 +1,32 @@
+﻿{
+  "tag": "|",
+  "footer": "PM2 Bots",
+  "minAge": 15,
+  "channels": {
+    "karsilama": "KANAL_ID",
+    "admin_hosgeldin": "KANAL_ID",
+    "kayit_log": "KANAL_ID",
+    "ceza_log": "KANAL_ID",
+    "eskalasyon_log": "KANAL_ID",
+    "hata_log": "KANAL_ID",
+    "yedek_log": "KANAL_ID"
+  },
+  "roles": {
+    "kayitsiz": "ROL_ID",
+    "erkek": "ROL_ID",
+    "kiz": "ROL_ID"
+  },
+  "permissions": {
+    "kayit_yapabilir": ["ROL_ID"],
+    "kayit_sifirlama": ["ROL_ID"],
+    "sicil_temizle": ["ROL_ID"]
+  },
+  "penals": {
+    "ban": { "points": 10, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 2, "escalation_action": "notify" },
+    "jail": { "points": 7, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 3, "escalation_action": "notify", "roles": ["CEZALI_ROL_ID"] },
+    "kick": { "points": 5, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 0, "escalation_action": "notify" },
+    "mute": { "points": 3, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 5, "escalation_action": "notify", "roles": ["MUTED_ROL_ID"] },
+    "warn": { "points": 1, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 5, "escalation_action": "notify" },
+    "timeout": { "points": 2, "staff": ["ROL_ID"], "log": "KANAL_ID", "limit": 0, "escalation_action": "notify" }
+  }
+}
